@@ -1,49 +1,73 @@
 *{
-    margin: 0;
-    padding: 0;
-    font-family: Arial;
-    text-align: center;  
-  }
+  margin: 0;
+  padding: 0;
+  font-family: Arial;  
+  text-align: center;
+}
+
+#nav{
+  heigth: 15rem;
+  background-color: red;  
+}
+
+#logoPokemon{
+  width:15rem;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#darkMode{
+  display:flex;
+  justify-content:flex-end;
+}
+
+#lua{
+  background-color: white;
+  color: black;
+}
+
+#lua:hover{
+  transition: 0.3s;
+  background-color: black;
+  color: white;
+}
+
+#section{
+  background-color: white;
+}
+
+footer {
+  background-color: black;
+  color: black;
+}
+
+button{
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 1rem;
+  margin: 1rem;
+  font-family: System;
+  font-weight: bold;
+  font-size: 1rem
   
-  header {
-    color: yellow;
-    -webkit-text-stroke-color:blue;
-    -webkit-text-stroke-width: 1px; 
-    background-color: red;  
-  }
-  
-  footer {
-    background-color: black;
-    color: black;
-  }
-  
-  button{
-    cursor: pointer;
-    transition: 0.3s;
-    padding: 1rem;
-    margin: 1rem;
-    font-family: System;
-    font-weight: bold;
-    font-size: 1rem
-    
-  }
-  
-  #imagem{
-    width: 50%;
-    height: 50%; 
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+}
+
+#imagem{
+  width: 50%;
+  height: 50%; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
