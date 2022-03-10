@@ -17,9 +17,7 @@ elementoLuaSol.addEventListener ('click' , () => {
   if (elementoLuaSol.value == 'claro') {
       elementoNav.style.backgroundColor = "black";
       elementoSection.style.backgroundColor = "blue";
-
-      /*elementoLuaSol.innerText = '\uF1D1'*/
-    
+        
       elementoLuaSol.value = 'escuro'
       elementoEvoluir.value = 'escuro0'
   }  
