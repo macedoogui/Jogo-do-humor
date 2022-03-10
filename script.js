@@ -15,51 +15,82 @@ let elementoLuaSol = document.getElementById('luaSol')
 elementoLuaSol.addEventListener ('click' , () => {
 
   if (elementoLuaSol.value == 'claro') {
-    elementoNav.style.backgroundColor = "black";
-   elementoSection.style.backgroundColor = "blue";
-  
-   elementoLuaSol.value = 'escuro'
-  }
-   
-else if (elementoLuaSol.value == 'escuro') {
-    elementoNav.style.backgroundColor = "red";
-   elementoSection.style.backgroundColor = "white";
+      elementoNav.style.backgroundColor = "black";
+      elementoSection.style.backgroundColor = "blue";
 
-   elementoLuaSol.value = 'claro' 
-}
+      /*elementoLuaSol.innerText = '\uF1D1'*/
+    
+      elementoLuaSol.value = 'escuro'
+      elementoEvoluir.value = 'escuro0'
+  }  
 
+
+  else if (elementoLuaSol.value == 'escuro') {
+      elementoNav.style.backgroundColor = "red";
+      elementoSection.style.backgroundColor = "white";
+
+      elementoLuaSol.value = 'claro'
+      elementoEvoluir.value = 'claro0'
+}  
 })
-
 
 
 
 elementoEvoluir.addEventListener ('click' , ()=>{
 
-  
-    
-  if (elementoEvoluir.value == 'claro1') {
+  if (elementoEvoluir.value == 'escuro1') {
+    elementoNome.innerText = 'Golbat'
+    elementoImagem.src = 'http://graphics.tppcrpg.net/xy/normal/042F.gif'
+    elementoImagem.alt = 'Golbat'
+    elementoForma.innerText = 'Segunda Forma'
+    elementoEvoluir.value = 'escuro2'
+  }
+
+  else if (elementoEvoluir.value == 'escuro2') {
+    elementoNome.innerText = 'Crobat'
+    elementoImagem.src = 'https://professorlotus.com/Sprites/Crobat.gif'
+    elementoImagem.alt = 'Crobat'
+    elementoForma.innerText = 'Terceira Forma'
+    elementoEvoluir.innerText = ' Voltar '
+    elementoEvoluir.value = 'escuro0'
+  }
+
+  else if ( elementoEvoluir.value == 'escuro0' ){
+    elementoNome.innerText = 'Zubat'
+    elementoImagem.src = 'https://professorlotus.com/Sprites/Zubat.gif'
+    elementoImagem.alt = 'Zubat'
+    elementoForma.innerText = 'Primeira Forma'
+    elementoEvoluir.innerText = 'Evoluir !!!'
+    elementoEvoluir.value = 'escuro1'
+  }
+     
+ 
+  else if (elementoEvoluir.value == 'claro1') {
     elementoNome.innerText = 'Charmeleon'
     elementoImagem.src = 'https://c.tenor.com/WqD4j9MevnYAAAAC/pokemon-charmeleon.gif'
+    elementoImagem.alt = 'Charmeleon'
     elementoForma.innerText = 'Segunda forma'
-   elementoEvoluir.value = 'claro2'
+    elementoEvoluir.value = 'claro2'
      
   }
     
- else if (elementoEvoluir.value == 'claro2') {
+  else if (elementoEvoluir.value == 'claro2') {
     elementoNome.innerText = 'Charizard'
-   elementoImagem.src = 'https://gifimage.net/wp-content/uploads/2017/07/charizard-gif-7.gif'
+    elementoImagem.src = 'https://gifimage.net/wp-content/uploads/2017/07/charizard-gif-7.gif'
+    elementoImagem.alt = 'Charizard'
     elementoForma.innerText = 'Terceira forma'
-   elementoEvoluir.innerText = ' Voltar '
+    elementoEvoluir.innerText = ' Voltar '
     elementoEvoluir.value = 'claro3'
   }
 
- else {               
+  else {               
     elementoNome.innerText = 'Charmander'
-    elementoImagem.src = 'http://i.imgur.com/VexuoSc.gif?noredirect'
+    elementoImagem.src = 'https://c.tenor.com/imUldC5bpu4AAAAC/pokemon-charmander.gif'
+    elementoImagem.alt = 'Charmander'
     elementoForma.innerText = 'Primeira forma'
     elementoEvoluir.innerText = 'Evoluir !!!'
     elementoEvoluir.value = 'claro1'
     }
          
 })
-                                  
+                                
