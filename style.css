@@ -22,15 +22,19 @@
   justify-content:flex-end;
 }
 
-#lua{
+#luaSol{
+  width: 3rem;
+  height:3rem;
+  
   background-color: white;
   color: black;
 }
 
-#lua:hover{
+#luaSol:hover{
   transition: 0.3s;
   background-color: black;
   color: white;
+  cursor: pointer;
 }
 
 #section{
@@ -42,15 +46,22 @@ footer {
   color: black;
 }
 
-button{
+#evoluir{
   cursor: pointer;
   transition: 0.3s;
   padding: 1rem;
   margin: 1rem;
   font-family: System;
   font-weight: bold;
-  font-size: 1rem
+  font-size: 1rem;
+  background-color: white;
+  color: black;
   
+}
+
+#evoluir:hover{
+  background-color: black;
+  color: white;
 }
 
 #imagem{

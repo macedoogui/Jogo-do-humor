@@ -13,12 +13,12 @@ let elementoEvoluir = document.getElementById('evoluir')
 let elementoLuaSol = document.getElementById('luaSol')
 
 
-
 elementoLuaSol.addEventListener ('click' , () => {
 
   if (elementoLuaSol.value == 'claro') {
       elementoNav.style.backgroundColor = "black";
-      elementoSection.style.backgroundColor = "blue";      
+      elementoSection.style.backgroundColor = "#A36AD9";   
+    
       elementoLuaSol.value = 'escuro';
       elementoEvoluir.value = 'escuro0';
   }  
