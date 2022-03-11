@@ -12,14 +12,15 @@ let elementoEvoluir = document.getElementById('evoluir')
 
 let elementoLuaSol = document.getElementById('luaSol')
 
+
+
 elementoLuaSol.addEventListener ('click' , () => {
 
   if (elementoLuaSol.value == 'claro') {
       elementoNav.style.backgroundColor = "black";
-      elementoSection.style.backgroundColor = "blue";
-        
-      elementoLuaSol.value = 'escuro'
-      elementoEvoluir.value = 'escuro0'
+      elementoSection.style.backgroundColor = "blue";      
+      elementoLuaSol.value = 'escuro';
+      elementoEvoluir.value = 'escuro0';
   }  
 
 
@@ -38,7 +39,7 @@ elementoEvoluir.addEventListener ('click' , ()=>{
 
   if (elementoEvoluir.value == 'escuro1') {
     elementoNome.innerText = 'Golbat'
-    elementoImagem.src = 'http://graphics.tppcrpg.net/xy/normal/042F.gif'
+    elementoImagem.src = 'https://professorlotus.com/Sprites/Golbat.gif'
     elementoImagem.alt = 'Golbat'
     elementoForma.innerText = 'Segunda Forma'
     elementoEvoluir.value = 'escuro2'

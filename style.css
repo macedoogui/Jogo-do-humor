@@ -58,6 +58,12 @@ button{
   height: 50%; 
 }
 
+footer{
+  color:white;
+  display:flex;
+  justify-content:flex-start;
+}
+
 
 
 
